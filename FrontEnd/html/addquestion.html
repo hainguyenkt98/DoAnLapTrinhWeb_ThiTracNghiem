@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head lang = "vi">
+	<title>Thi trắc nghiệm</title>
+	<meta charset = "UTF-8" />
+	<!-- Bootstrap -->
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<!-- Latest compiled JavaScript -->
+	<script src="../js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/mainframe.css">
+	<link rel="stylesheet" type="text/css" href="../css/addquestion.css">
+	<link rel="stylesheet" href="../fontawesome/fontawesome-free-5.3.1-web/css/all.min.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/addquestion.css">
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		    $('#toggle-img').click(function(event){
+		        event.stopPropagation();
+		         $(".info").slideToggle("fast");
+		    });
+		    $(".info").on("click", function (event) {
+		        event.stopPropagation();
+		    });
+		});
+
+		$(document).on("click", function () {
+		    $(".info").hide();
+		});
+
+	</script>
+</head>
+<body>		
+	<div class="canvas">
+		<div class="header">
+			<div class="cover-header">
+				<div class="software-name">
+					<h3>Logo và tên phần mềm</h3>
+				</div>
+				
+				<div class="toggle-info">
+					<img id="toggle-img" src="../images/user-icon-logout.png" alt="">
+					<div class="info">
+					
+					</div>
+				</div>				
+			</div>		
+		</div>
+		<div class="body">
+			<div class="sidebar">
+				<div class="sidebar-menu">
+					<ul>
+						<li class="sidebar-feature">
+							<a href="find-friend.html">
+								<i class="fas fa-search"></i>
+								<span>Tìm kiếm bạn bè</span>
+							</a>
+						</li>
+						<li class="sidebar-feature">
+							<a href="mainframe.html">
+								<i class="far fa-comment"></i>
+								<span>Trò chuyện</span>
+							</a>
+						</li>
+						<li class="sidebar-feature">
+							<a href="friend-list.html">
+								<i class="fas fa-user-friends"></i>
+								<span>Danh sách bạn bè</span>
+							</a>
+						</li>
+						<li class="sidebar-feature">
+							<a href="block-list.html">
+								<i class="fas fa-ban"></i>
+								<span>Danh sách chặn</span>
+							</a>
+						</li>
+						<li class="sidebar-feature">
+							<a href="personal-info.html">
+								<i class="fas fa-info"></i>
+								<span>Quản lý thông tin</span>
+							</a>
+						</li>
+						<li class="sidebar-feature">
+							<a href="../sign-in.html">
+								<i class="fas fa-sign-out-alt"></i>
+								<span>Đăng xuất</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container" style="overflow: auto;">
+				<div class="row" style="padding: 10px;margin-left: 10px;"><h2>Thêm câu hỏi</h2> </div>
+				<div class="row main col-sm-12">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 ">
+						<form >
+							<div class="row">
+								<div class="col-50">
+								<label >Chọn môn</label><br>
+								<select >
+									<option>Toán</option>
+									<option>Văn</option>
+									<option>Anh</option>
+								</select>
+							</div>
+							<div class="col-50">
+								<label>Chọn loại </label><br>
+								<select >
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+								</select>
+							</div>
+							</div>
+							<div class="row">
+								<div class="col-100">
+									<label>Nhập câu hỏi</label><br>
+									<textarea class="form-control" rows="4" id=""></textarea>
+								</div>		
+							</div>
+							<div class="row">
+								<div class="col-50">
+									<label>Câu trả lời A</label><br>
+									<textarea class="form-control" rows="2" id="" style="width:90%;"></textarea>
+								</div>
+								<div class="col-50">
+									<label>Câu trả lời B</label><br>
+									<textarea class="form-control" rows="2" id=""style="width:90%;"></textarea>
+								</div>
+								<div class="col-50">
+									<label>Câu trả lời C</label><br>
+									<textarea class="form-control" rows="2" id=""style="width:90%;"></textarea>
+								</div>
+								<div class="col-50">
+									<label>Câu trả lời D</label><br>
+									<textarea class="form-control" rows="2" id=""style="width:90%;"></textarea>
+								</div>
+								<div class="col-100">
+									<button type="button" class="btn btn-info btn-block" id="add">Thêm</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-sm-1"></div>	
+				 </div>
+				 <div class="row" style="padding: 10px;margin-left: 10px;"><h2>Thêm bằng file excel</h2> </div>
+				 <div class="row main col-sm-12">
+				 	<div class="col-sm-1"></div>
+					<div class="col-sm-10 ">
+						<form>
+							<div class="row">
+								<div class="col-50">
+									<input type="file" name="">
+								</div>
+								<div class="col-50">
+									<button type="button" class="btn btn-info btn-block" id="add">Thêm</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-sm-1"></div>
+				 </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
