@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang = "vi">
+	<title>Thi trắc nghiệm</title>
+	<meta charset = "UTF-8" />
+	<!-- Bootstrap -->
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<!-- Latest compiled JavaScript -->
+	<script src="../js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/mainframe.css">
+
+	<link rel="stylesheet" href="../fontawesome/fontawesome-free-5.3.1-web/css/all.min.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		    $('#toggle-img').click(function(event){
+		        event.stopPropagation();
+		         $(".info").slideToggle("fast");
+		    });
+		    $(".info").on("click", function (event) {
+		        event.stopPropagation();
+		    });
+		});
+
+		$(document).on("click", function () {
+		    $(".info").hide();
+		});
+
+	</script>
+</head>
+<body>		
+	<div class="canvas">
+		<div class="header">
+			<div class="cover-header">
+				<div class="software-name">
+					<h3>Logo và tên phần mềm</h3>
+				</div>
+				
+				<div class="toggle-info">
+					<img id="toggle-img" src="../images/user-icon-logout.png" alt="">
+					<div class="info">
+					
+					</div>
+				</div>				
+			</div>		
+		</div>
+		<div class="body">
+			<div class="sidebar">
+				<div class="sidebar-menu">
+					<ul>
+						<li class="sidebar-feature">
+							<a href="find-friend.html">
+								<i class="fas fa-search"></i>
+								<span>Tìm kiếm bạn bè</span>
+							</a>
+						</li>
+						<li class="sidebar-feature">
+							<a href="mainframe.html">
+								<i class="far fa-comment"></i>
+								<span>Trò chuyện</span>
+							</a>
+						</li>
+						<li class="sidebar-feature">
+							<a href="friend-list.html">
+								<i class="fas fa-user-friends"></i>
+								<span>Danh sách bạn bè</span>
+							</a>
+						</li>
+						<li class="sidebar-feature">
+							<a href="block-list.html">
+								<i class="fas fa-ban"></i>
+								<span>Danh sách chặn</span>
+							</a>
+						</li>
+						<li class="sidebar-feature">
+							<a href="personal-info.html">
+								<i class="fas fa-info"></i>
+								<span>Quản lý thông tin</span>
+							</a>
+						</li>
+						<li class="sidebar-feature">
+							<a href="../sign-in.html">
+								<i class="fas fa-sign-out-alt"></i>
+								<span>Đăng xuất</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container">
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
