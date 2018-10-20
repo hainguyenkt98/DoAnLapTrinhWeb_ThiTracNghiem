@@ -30,3 +30,14 @@
 	float: right;
 	margin-right: 50px;
 }
+.popup-remove
+{
+	z-index: 1;
+	height: 150px;
+	width: 300px;
+	background-color: red;
+	position: absolute;
+	top: 40%;
+	left: 45%;
+	display: none;
+}
