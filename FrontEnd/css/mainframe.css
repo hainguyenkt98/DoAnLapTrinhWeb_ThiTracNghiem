@@ -101,13 +101,15 @@ h5{
 	float: right;
 	padding: 0;
 	background-color: #FFFFFF;
+	z-index: 0;
 }
 .toggle-info img
 {
 	height: 50px;
 	width: 50px;
 	border-radius: 50%;
-	margin-left: 80px;
+	margin-left: 15px;
+	margin-right: 5px;
 }
 .software-name
 {
@@ -126,14 +128,42 @@ h5{
 .toggle-info img:hover
 {
 	cursor: pointer;
-	border:1px solid #ffffff;
+	background-color: grey;
+}
+.user-name:hover
+{
+	color: #ffffff;
+	cursor: pointer;
+}
+.user-name
+{
+	color: grey;
 }
 .info
 {
 	width: 200px;
-	height: 250px;
+	height: 100px;
 	background-color: #404040;
 	position: absolute;
 	margin-top: 5px;
 	display: none;
+	z-index: 1;
+}
+.item-info
+{
+	height: 50px;
+	border-bottom: 1px solid grey;
+	text-align: center;
+	font-size: 18px;
+	margin:auto;
+	padding-top: 12px;
+}
+.item-info:hover
+{
+	cursor: pointer;
+	background-color: #394B59;
+}
+.logout span
+{
+	margin-left: 5px;
 }

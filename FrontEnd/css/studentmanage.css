@@ -1,0 +1,32 @@
+.table.table-bordered
+{
+	overflow: auto;
+}
+.card-body
+{
+	height: 100%;
+}
+.card
+{
+	height: 100%;
+	border-radius: 0%;
+}
+.table-data
+{
+	height: 100%;
+}
+#table
+{
+	overflow: auto;
+	height: calc(100% - 50px);
+}
+.pagination-bot
+{
+	height: 50px;
+	padding-top: 10px;
+}
+.pagination
+{
+	float: right;
+	margin-right: 50px;
+}

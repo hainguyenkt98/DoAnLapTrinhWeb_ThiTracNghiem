@@ -21,6 +21,10 @@
 		        event.stopPropagation();
 		         $(".info").slideToggle("fast");
 		    });
+		    $(".user-name").click(function(event){
+		        event.stopPropagation();
+		         $(".info").slideToggle("fast");
+		    });
 		    $(".info").on("click", function (event) {
 		        event.stopPropagation();
 		    });
@@ -42,8 +46,14 @@
 				
 				<div class="toggle-info">
 					<img id="toggle-img" src="../images/user-icon-logout.png" alt="">
+					<span class="user-name">Hải Nguyễn</span>
 					<div class="info">
-					
+						<div class="myinfo item-info">
+							<span>Thông tin cá nhân</span>
+						</div>
+						<div class="logout item-info">
+							<i class="fas fa-sign-out-alt"></i><span>Đăng xuất</span>
+						</div>
 					</div>
 				</div>				
 			</div>		
@@ -68,7 +78,6 @@
 				</div>
 			</div>
 			<div class="container">
-				<!-- Editable table -->
 				<div class="card">
 				  	<div class="card-body">
 					    <div id="table" class="table-editable">
@@ -173,7 +182,6 @@
 						           	  <span class="table-remove"><button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Xóa</button></span>
 						          </td>
 						        </tr>
-
 						        <tr>
 						          <td class="pt-1-half" contenteditable="false">sv16110318</td>
 						          <td class="pt-2-half" contenteditable="false">Nguyễn Văn Hải</td>
@@ -187,7 +195,6 @@
 						           	  <span class="table-remove"><button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Xóa</button></span>
 						          </td>
 						        </tr>
-
 						        <tr>
 						          <td class="pt-1-half" contenteditable="false">sv16110318</td>
 						          <td class="pt-2-half" contenteditable="false">Nguyễn Văn Hải</td>
@@ -201,7 +208,6 @@
 						           	  <span class="table-remove"><button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Xóa</button></span>
 						          </td>
 						        </tr>
-
 						        <tr>
 						          <td class="pt-1-half" contenteditable="false">sv16110318</td>
 						          <td class="pt-2-half" contenteditable="false">Nguyễn Văn Hải</td>
@@ -215,7 +221,6 @@
 						           	  <span class="table-remove"><button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Xóa</button></span>
 						          </td>
 						        </tr>
-
 						        <tr>
 						          <td class="pt-1-half" contenteditable="false">sv16110318</td>
 						          <td class="pt-2-half" contenteditable="false">Nguyễn Văn Hải</td>
@@ -259,6 +264,17 @@
 						        </tr>
 					      </table>
 					    </div>
+					    <!-- end idtable -->
+
+					    <nav class="pagination-bot" aria-label="Page navigation example">
+						  <ul class="pagination">
+						    <li class="page-item"><a class="page-link" href="#">Trước</a></li>
+						    <li class="page-item"><a class="page-link" href="#">1</a></li>
+						    <li class="page-item"><a class="page-link" href="#">2</a></li>
+						    <li class="page-item"><a class="page-link" href="#">3</a></li>
+						    <li class="page-item"><a class="page-link" href="#">Sau</a></li>
+						  </ul>
+						</nav>
 				  	</div>
 				</div>
 				<!-- Editable table -->
