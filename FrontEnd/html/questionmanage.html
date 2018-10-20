@@ -70,11 +70,11 @@
 			<div class="container">
 				<!-- Editable table -->
 				<div class="card">
-				  	<div class="card-body">
+				  	<div class="card-body" style="overflow: scroll;">
 				  		<div class="row" style="margin-left: 10px;">
 				  			<div class="col-30">
 								<label >Chọn môn</label><br>
-								<select >
+								<select class="form-control">
 									<option>Toán</option>
 									<option>Văn</option>
 									<option>Anh</option>
@@ -82,7 +82,7 @@
 							</div>
 							<div class="col-30">
 								<label>Chọn loại </label><br>
-								<select >
+								<select class="form-control">
 									<option>1</option>
 									<option>2</option>
 									<option>3</option>
@@ -90,14 +90,15 @@
 							</div>
 							<div class="col-30">
 								<label>Nhập câu hỏi: </label><br>
-								<input type="text" name="" style="height: 25px;width: 350px;" >
+								<input type="text" name="" style="height: 39px;width: 350px;"
+								class="form-control">
 							</div>
 							<div class="col-100">
 									<button type="button" class="btn btn-info" id="add" style="width: 250px;margin-left: 40px;">Tìm kiếm</button>
 								<hr>
 								</div>
 				  		</div>
-					    <div id="table" class="table-editable">
+					    <div id="table" class="table-editable" style="overflow: inherit">
 							<span class="table-add float-right mb-3 mr-2">
 						    	<a href="#!" class="text-success">
 						    		<i class="fa fa-plus fa-2x" aria-hidden="true"></i>
@@ -209,56 +210,18 @@
 						           	  <span class="table-remove"><button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Xóa</button></span>
 						          </td>
 						        </tr>
-
-						        <tr>
-						          <td class="pt-1-half" contenteditable="false">9</td>
-						          <td class="pt-2-half" contenteditable="false">CH9</td>
-						          <td class="pt-2-half" contenteditable="false">Each of us must take ______ for our own actions</td>
-						          <td class="pt-1-half" contenteditable="false">Responsibility</td>
-						          <td class="pt-2-half" contenteditable="false">20/7/2018</td>
-						          <td>
-						          	  <span class="table-edit"><button type="button" class="btn btn-primary btn-rounded btn-sm my-0">Sửa</button></span>
-						           	  <span class="table-remove"><button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Xóa</button></span>
-						          </td>
-						        </tr>
-
-						        <tr>
-						          <td class="pt-1-half" contenteditable="false">10</td>
-						          <td class="pt-2-half" contenteditable="false">CH10</td>
-						          <td class="pt-2-half" contenteditable="false">Each of us must take ______ for our own actions</td>
-						          <td class="pt-1-half" contenteditable="false">Responsibility</td>
-						          <td class="pt-2-half" contenteditable="false">20/7/2018</td>
-						          <td>
-						          	  <span class="table-edit"><button type="button" class="btn btn-primary btn-rounded btn-sm my-0">Sửa</button></span>
-						           	  <span class="table-remove"><button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Xóa</button></span>
-						          </td>
-						        </tr>
-
-						        <tr>
-						          <td class="pt-1-half" contenteditable="false">11</td>
-						          <td class="pt-2-half" contenteditable="false">CH11</td>
-						          <td class="pt-2-half" contenteditable="false">Each of us must take ______ for our own actions</td>
-						          <td class="pt-1-half" contenteditable="false">Responsibility</td>
-						          <td class="pt-2-half" contenteditable="false">20/7/2018</td>
-						          <td>
-						          	  <span class="table-edit"><button type="button" class="btn btn-primary btn-rounded btn-sm my-0">Sửa</button></span>
-						           	  <span class="table-remove"><button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Xóa</button></span>
-						          </td>
-						        </tr>
-
-						        <tr>
-						          <td class="pt-1-half" contenteditable="false">12</td>
-						          <td class="pt-2-half" contenteditable="false">CH12</td>
-						          <td class="pt-2-half" contenteditable="false">Each of us must take ______ for our own actions</td>
-						          <td class="pt-1-half" contenteditable="false">Responsibility</td>
-						          <td class="pt-2-half" contenteditable="false">20/7/2018</td>
-						          <td>
-						          	  <span class="table-edit"><button type="button" class="btn btn-primary btn-rounded btn-sm my-0">Sửa</button></span>
-						           	  <span class="table-remove"><button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Xóa</button></span>
-						          </td>
-						        </tr>
+	       
 					      </table>
 					    </div>
+					    <nav class="pagination-bot" aria-label="Page navigation example">
+						  <ul class="pagination">
+						    <li class="page-item"><a class="page-link" href="#">Trước</a></li>
+						    <li class="page-item"><a class="page-link" href="#">1</a></li>
+						    <li class="page-item"><a class="page-link" href="#">2</a></li>
+						    <li class="page-item"><a class="page-link" href="#">3</a></li>
+						    <li class="page-item"><a class="page-link" href="#">Sau</a></li>
+						  </ul>
+						</nav>
 				  	</div>
 				</div>
 				<!-- Editable table -->
