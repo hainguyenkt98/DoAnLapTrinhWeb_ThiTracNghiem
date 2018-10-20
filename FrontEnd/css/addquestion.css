@@ -1,0 +1,44 @@
+
+select
+{
+	width: 90%;
+}
+.main
+{
+	background-color: #D8D8D8;
+	border-radius: 5px ;
+	padding: 2px;
+	margin-left: 10px;
+	max-width: 98%;
+}
+
+.col-50 
+		{
+    		float: left;
+    		width: 50%;
+    		margin-top: 6px;
+		}
+label
+{
+	margin-top: 5px;
+}	
+#question
+{
+	size: 100%;
+}
+{
+	width: 100%;
+}
+.col-100
+{
+	float: left;
+    width: 100%;
+}
+#add
+{
+	margin-top: 10px;
+}
+input[type=file]
+{
+	padding: 5px;
+}
