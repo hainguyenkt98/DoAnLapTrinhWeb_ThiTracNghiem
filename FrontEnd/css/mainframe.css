@@ -61,10 +61,10 @@ h5{
 	text-decoration: none;
 }
 .sidebar-menu > ul > li{
-	padding-left: 100px;
+	padding-left: 20px;
 }
 .sidebar-menu > ul > li > a > i{
-	margin-right: 100px;
+	margin-right: 10px;
 	line-height: 30px;
 	text-align: center;
 	background: #2b2b2b;
