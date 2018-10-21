@@ -1,0 +1,26 @@
+.container{
+	overflow: scroll;
+}
+.form-control{
+	width: auto;
+	display: inline-block;
+}
+.manager-form{
+	width: 800px;
+	margin: auto;
+	margin-top: 50px;
+}
+.form-item{
+	margin-bottom: 20px;
+	min-width: 800px;
+}
+.item-title{
+	width: 150px;
+	margin-right: 5px;
+}
+.review-btn button{
+	margin-left: 270px;
+}
+.btn{
+	vertical-align: baseline;
+}
