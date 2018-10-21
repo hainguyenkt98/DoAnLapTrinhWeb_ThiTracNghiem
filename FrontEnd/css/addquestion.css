@@ -42,3 +42,16 @@ input[type=file]
 {
 	padding: 5px;
 }
+.col-30
+{
+	float: left;
+    width: 30%;
+}
+.form-control
+{
+	width: 100%
+}
+select.form-control
+{
+	width: 90%;
+}
