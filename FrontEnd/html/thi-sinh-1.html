@@ -8,24 +8,26 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="../js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/mainframe.css">
+	<link rel="stylesheet" type="text/css" href="../css/form-style.css">
 
 	<link rel="stylesheet" href="../fontawesome/fontawesome-free-5.3.1-web/css/all.min.css">
 	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-		    $('#toggle-img').click(function(event){
-		        event.stopPropagation();
-		         $(".info").slideToggle("fast");
-		    });
-		    $(".info").on("click", function (event) {
-		        event.stopPropagation();
-		    });
+			$('#toggle-img').click(function(event){
+				event.stopPropagation();
+				$(".info").slideToggle("fast");
+			});
+			$(".info").on("click", function (event) {
+				event.stopPropagation();
+			});
 		});
 
 		$(document).on("click", function () {
-		    $(".info").hide();
+			$(".info").hide();
 		});
 
 	</script>
@@ -41,7 +43,7 @@
 				<div class="toggle-info">
 					<img id="toggle-img" src="../images/user-icon-logout.png" alt="">
 					<div class="info">
-					
+
 					</div>
 				</div>				
 			</div>		
@@ -90,7 +92,50 @@
 				</div>
 			</div>
 			<div class="container">
-				
+				<div id="accordion" class="exam-list">
+					<div class="card">
+						<div class="card-header">
+							<a class="card-link" data-toggle="collapse" href="#collapseOne">
+								Bài thi toán
+							</a>
+						</div>
+						<div id="collapseOne" class="collapse">
+							<div class="list-group list-group-flush exams">
+								<a href="#" class="list-group-item list-group-item-action">Toán A1</a>
+								<a href="#" class="list-group-item list-group-item-action">Toán A2</a>
+								<a href="#" class="list-group-item list-group-item-action">Toán A3</a>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header">
+							<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+								Bài thi lý
+							</a>
+						</div>
+						<div id="collapseTwo" class="collapse">
+							<div class="list-group list-group-flush exams">
+								<a href="#" class="list-group-item list-group-item-action">Vật lý đại cương 1</a>
+								<a href="#" class="list-group-item list-group-item-action">Vật lý đại cương 2</a>
+								<a href="#" class="list-group-item list-group-item-action">Thí nghiệm vật lý</a>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header">
+							<a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+								Bài thi anh
+							</a>
+						</div>
+						<div id="collapseThree" class="collapse">
+							<div class="list-group list-group-flush exams">
+								<a href="#" class="list-group-item list-group-item-action">Anh văn 1</a>
+								<a href="#" class="list-group-item list-group-item-action">Anh văn 2</a>
+								<a href="#" class="list-group-item list-group-item-action">Anh văn 3</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
