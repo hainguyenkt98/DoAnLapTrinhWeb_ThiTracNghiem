@@ -13,90 +13,65 @@
 	<link rel="stylesheet" href="../fontawesome/fontawesome-free-5.3.1-web/css/all.min.css">
 	<script src="../js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-
-
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('#toggle-img').click(function(event){
-				event.stopPropagation();
-				$(".info").slideToggle("fast");
-			});
-			$(".info").on("click", function (event) {
-				event.stopPropagation();
-			});
-		});
-
-		$(document).on("click", function () {
-			$(".info").hide();
-		});
-
-	</script>
+	<script type="text/javascript" src="../js/mainframe.js"></script>
 </head>
 <body>		
 	<div class="canvas">
 		<div class="header">
 			<div class="cover-header">
 				<div class="software-name">
-					<h3>Logo và tên phần mềm</h3>
+					<h3>LUYỆN THI TRẮC NGHIỆM</h3>
 				</div>
+				<div class="logo-inline"></div>
 				
 				<div class="toggle-info">
 					<img id="toggle-img" src="../images/user-icon-logout.png" alt="">
+					<span class="user-name">Hải Nguyễn</span>
 					<div class="info">
-
+						<div class="myinfo item-info">
+							<span>Thông tin cá nhân</span>
+						</div>
+						<div class="logout item-info">
+							<i class="fas fa-sign-out-alt"></i><span>Đăng xuất</span>
+						</div>
 					</div>
 				</div>				
 			</div>		
 		</div>
 		<div class="body">
 			<div class="sidebar">
+				<div class="sidebar-header">
+					<p>MENU</p>
+				</div>
 				<div class="sidebar-menu">
 					<ul>
 						<li class="sidebar-feature">
 							<a href="find-friend.html">
 								<i class="fas fa-book-open"></i>
-								<span>Bài Kiểm Tra Toán</span>
+								<span>Xem các bài kiểm tra</span>
 							</a>
 						</li>
 						<li class="sidebar-feature">
 							<a href="mainframe.html">
 								<i class="fas fa-book-open"></i>
-								<span>Bài Kiểm Tra Lý</span>
+								<span>Xem điểm kiểm tra</span>
 							</a>
 						</li>
 						<li class="sidebar-feature">
 							<a href="friend-list.html">
 								<i class="fas fa-book-open"></i>
-								<span>Bài Kiểm Tra Hóa</span>
-							</a>
-						</li>
-						<li class="sidebar-feature">
-							<a href="block-list.html">
-								<i class="fas fa-book-open"></i>
-								<span>Bài Kiểm Tra Sử</span>
-							</a>
-						</li>
-						<li class="sidebar-feature">
-							<a href="personal-info.html">
-								<i class="fas fa-book-open"></i>
-								<span>Bài Kiểm Tra Văn</span>
-							</a>
-						</li>
-						<li class="sidebar-feature">
-							<a href="../sign-in.html">
-								<i class="fas fa-book-open"></i>
-								<span>Bài Kiểm Tra Địa</span>
+								<span>Thông tin cá nhân</span>
 							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
-			<div class="container">
+			<div class="container-main">
 				<div id="accordion" class="exam-list">
 					<div class="card">
 						<div class="card-header">
 							<a class="card-link" data-toggle="collapse" href="#collapseOne">
-								Bài thi toán
+								Môn Toán
 							</a>
 						</div>
 						<div id="collapseOne" class="collapse">
@@ -110,7 +85,7 @@
 					<div class="card">
 						<div class="card-header">
 							<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-								Bài thi lý
+								Môn Lý
 							</a>
 						</div>
 						<div id="collapseTwo" class="collapse">
@@ -124,7 +99,7 @@
 					<div class="card">
 						<div class="card-header">
 							<a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-								Bài thi anh
+								Môn Anh Văn
 							</a>
 						</div>
 						<div id="collapseThree" class="collapse">
