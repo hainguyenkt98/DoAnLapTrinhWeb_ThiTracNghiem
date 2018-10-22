@@ -17,7 +17,6 @@ $(document).ready(function(){
          $(".info").slideToggle("fast");
     });
     $(".info").on("click", function (event) {
-        event.stopPropagation();
+        event.hide();
     }); 
 });
-

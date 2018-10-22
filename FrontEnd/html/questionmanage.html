@@ -10,48 +10,46 @@
 	<link rel="stylesheet" type="text/css" href="../css/mainframe.css">
 
 	<link rel="stylesheet" href="../fontawesome/fontawesome-free-5.3.1-web/css/all.min.css">
-	<link rel="stylesheet" href="../css/studentmanage.css">
 	
 	<script src="../js/jquery-3.3.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/questionmanage.css">
-
-	<script type="text/javascript">
-		$(document).ready(function(){
-		    $('#toggle-img').click(function(event){
-		        event.stopPropagation();
-		         $(".info").slideToggle("fast");
-		    });
-		    $(".info").on("click", function (event) {
-		        event.stopPropagation();
-		    });
-		});
-
-		$(document).on("click", function () {
-		    $(".info").hide();
-		});
-
-	</script>
+	<script src="../js/mainframe.js"></script>
 </head>
 <body>		
 	<div class="canvas">
 		<div class="header">
 			<div class="cover-header">
 				<div class="software-name">
-					<h3>Logo và tên phần mềm</h3>
+					<h3>LUYỆN THI TRẮC NGHIỆM</h3>
 				</div>
 				
 				<div class="toggle-info">
 					<img id="toggle-img" src="../images/user-icon-logout.png" alt="">
+					<span class="user-name">Hải Nguyễn</span>
 					<div class="info">
-					
+						<div class="myinfo item-info">
+							<span>Thông tin cá nhân</span>
+						</div>
+						<div class="logout item-info">
+							<i class="fas fa-sign-out-alt"></i><span>Đăng xuất</span>
+						</div>
 					</div>
 				</div>				
 			</div>		
 		</div>
 		<div class="body">
 			<div class="sidebar">
+				<div class="sidebar-header">
+					<p>MENU</p>
+				</div>
 				<div class="sidebar-menu">
 					<ul>
+						<li class="sidebar-feature">
+							<a href="#">
+								<i class="fas fa-user-graduate"></i>
+								<span>Quản lý câu hỏi</span>
+							</a>
+						</li>
 						<li class="sidebar-feature">
 							<a href="#">
 								<i class="fas fa-user-graduate"></i>
@@ -61,43 +59,42 @@
 						<li class="sidebar-feature">
 							<a href="#">
 								<i class="fas fa-users"></i>
-								<span>Quản lý câu hỏi</span>
+								<span>Thông tin cá nhân</span>
 							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
-			<div class="container">
+			<div class="container-main">
 				<!-- Editable table -->
+				<div class="row filter-search">
+		  			<div class="col-sm-3">
+						<label >Chọn môn</label><br>
+						<select class="form-control">
+							<option>Toán</option>
+							<option>Văn</option>
+							<option>Anh</option>
+						</select>
+					</div>
+					<div class="col-sm-3">
+						<label>Chọn loại </label><br>
+						<select class="form-control">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+						</select>
+					</div>
+					<div class="col-sm-30">
+						<label>Nhập câu hỏi: </label><br>
+						<input type="text" name="" style="height: 39px;width: 350px;"
+						class="form-control">
+					</div>
+					<div class="col-sm-3">
+						<button type="button" class="btn btn-info search" style="width: 250px;margin-left: 40px;">Tìm kiếm</button>
+					</div>
+		  		</div>
 				<div class="card">
-				  	<div class="card-body" style="overflow: scroll;">
-				  		<div class="row" style="margin-left: 10px;">
-				  			<div class="col-30">
-								<label >Chọn môn</label><br>
-								<select class="form-control">
-									<option>Toán</option>
-									<option>Văn</option>
-									<option>Anh</option>
-								</select>
-							</div>
-							<div class="col-30">
-								<label>Chọn loại </label><br>
-								<select class="form-control">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-								</select>
-							</div>
-							<div class="col-30">
-								<label>Nhập câu hỏi: </label><br>
-								<input type="text" name="" style="height: 39px;width: 350px;"
-								class="form-control">
-							</div>
-							<div class="col-100">
-									<button type="button" class="btn btn-info" id="add" style="width: 250px;margin-left: 40px;">Tìm kiếm</button>
-								<hr>
-								</div>
-				  		</div>
+				  	<div class="card-body">
 					    <div id="table" class="table-editable" style="overflow: inherit">
 							<span class="table-add float-right mb-3 mr-2">
 						    	<a href="#!" class="text-success">
@@ -213,18 +210,19 @@
 	       
 					      </table>
 					    </div>
-					    <nav class="pagination-bot" aria-label="Page navigation example">
-						  <ul class="pagination">
-						    <li class="page-item"><a class="page-link" href="#">Trước</a></li>
-						    <li class="page-item"><a class="page-link" href="#">1</a></li>
-						    <li class="page-item"><a class="page-link" href="#">2</a></li>
-						    <li class="page-item"><a class="page-link" href="#">3</a></li>
-						    <li class="page-item"><a class="page-link" href="#">Sau</a></li>
-						  </ul>
-						</nav>
+					    
 				  	</div>
 				</div>
-				<!-- Editable table -->
+				<nav class="pagination-bot" aria-label="Page navigation example">
+				  <ul class="pagination">
+				    <li class="page-item"><a class="page-link" href="#">Trước</a></li>
+				    <li class="page-item"><a class="page-link" href="#">1</a></li>
+				    <li class="page-item"><a class="page-link" href="#">2</a></li>
+				    <li class="page-item"><a class="page-link" href="#">3</a></li>
+				    <li class="page-item"><a class="page-link" href="#">Sau</a></li>
+				  </ul>
+				</nav>
+				<!-- Card table -->
 			</div>
 			<!-- end container -->
 		</div>

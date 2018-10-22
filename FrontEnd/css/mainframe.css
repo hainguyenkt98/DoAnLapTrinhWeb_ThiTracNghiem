@@ -27,9 +27,9 @@ h5{
 .header
 {
 	height: 60px;
-	background-color: #343A40;
+	background-color: #BDBDBD;
 	padding-top: 10px;
-	color: #ffffff;
+	color: #353247;
 }
 .body
 {
@@ -40,7 +40,7 @@ h5{
 	z-index: 5;
 	width: 250px;
 	float: left;
-	background-color: #394B59;
+	background-color: #F3F3F3;
 	height: 100%;
 	position: absolute;
 }
@@ -49,14 +49,13 @@ h5{
 	padding: 10px 0;
 }
 .sidebar-feature > a{
-	color: #bdbdbd;
+	color: black;
+	font-weight: bold;
 }
 .sidebar-feature:hover{
-	background-color: #404040;
+	background-color: #BDBDBD;
 }
-.sidebar-menu{
-	margin-top: 20px;
-}
+
 .sidebar-menu > ul, li, a:hover {
 	text-decoration: none;
 }
@@ -67,7 +66,7 @@ h5{
 	margin-right: 10px;
 	line-height: 30px;
 	text-align: center;
-	background: #2b2b2b;
+	background: #bdbdbd;
 	width: 30px;
 	border-radius: 5px;
 }
@@ -75,8 +74,12 @@ h5{
 	width: 100%;
 	display: inline-grid;
 	border-bottom: 1px solid grey;
-	height: 60px;
-	background-color: #F3F3F3;
+	height: 50px;
+	background-color: #919191;
+	text-align: center;
+	padding-top: 10px;
+	font-weight: bold;
+	font-size: 20px;
 }
 .user-info{
 	color: #bdbdbd;
@@ -94,7 +97,7 @@ h5{
 	padding-top: 10px;
 	border-bottom: 1px solid grey;
 }
-.container{
+.container-main{
 	max-width: calc(100% - 250px);
 	width: calc(100% - 250px);
 	height: 100%;
@@ -138,13 +141,13 @@ h5{
 }
 .user-name
 {
-	color: grey;
+	color: #353247;
 }
 .info
 {
 	width: 200px;
 	height: 100px;
-	background-color: #404040;
+	background-color: #F3F3F3;
 	position: absolute;
 	margin-top: 5px;
 	display: none;
@@ -162,7 +165,7 @@ h5{
 .item-info:hover
 {
 	cursor: pointer;
-	background-color: #394B59;
+	background-color: #919191;
 }
 .logout span
 {
@@ -170,5 +173,10 @@ h5{
 }
 .sidebar-selected
 {
-    background-color: #003366;
+    background-color: #BDBDBD;
+}
+.logo-inline img
+{
+	height: 30px;
+	width: 30px;
 }
